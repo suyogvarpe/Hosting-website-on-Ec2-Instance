@@ -1,0 +1,14 @@
+1)Create EC2 instance with Amzon linux AMI.
+2)Add HTTP port in sercurity group so you can access your website.
+3)Connect EC2 instance.
+4)Install httpd server to host website.
+  --sudo yum install httpd
+5)Start httpd service using following commands.
+  --systemctl start httpd
+  --systemctl enabled httpd
+6)Add your index.html and other files on following paths
+  cd /var/www/html
+7)Again restart the httpd service using bellow command.
+  --systemctl restart httpd
+8)Now you can access your website using server Public Ip
+  ex)http://13.203.201.38/
